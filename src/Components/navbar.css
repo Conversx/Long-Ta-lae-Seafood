@@ -1,0 +1,89 @@
+.nav-link {
+    position: relative;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .nav-link:hover {
+    color: #f97316;
+  }
+  
+  .nav-link::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -3px;
+    left: 0;
+    background-color: #f97316;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .nav-link:hover::before {
+    visibility: visible;
+    width: 100%;
+  }
+
+  .nav-link2 {
+    position: relative;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .nav-link2:hover {
+    color: #ff0000;
+  }
+  
+  .nav-link2::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -3px;
+    left: 0;
+    background-color: #ff0000;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .nav-link2:hover::before {
+    visibility: visible;
+    width: 100%;
+  }
+
+  .animated-alert {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 1000; /* ตั้งค่า z-index เพื่อให้แสดงบนสุดของหน้าเว็บ */
+    animation: slideUp 0.5s ease forwards, fadeOut 0.5s ease forwards 2.5s;
+  }
+  
+  @keyframes slideUp {
+    from {
+      bottom: -100px;
+    }
+    to {
+      bottom: 0;
+    }
+  }
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  
+  
+  
+
+
+  
+  

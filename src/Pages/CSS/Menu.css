@@ -1,0 +1,105 @@
+.filter-button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.filter-button:hover {
+  animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 20px rgb(255, 149, 0);
+  }
+  to {
+    box-shadow: 0 0 40px rgb(255, 208, 0);
+  }
+}
+
+.alert-container {
+    position: fixed;
+    bottom: 20px; /* Adjust this value as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999; /* Ensure the alert appears above other content */
+}
+
+
+.filter-button:focus {
+  outline: none;
+}
+
+.slim-card {
+  max-width: 200px; /* ปรับขนาดตามที่ต้องการ */
+}
+
+.All-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.join {
+  display: flex;
+  justify-content: center; /* จัดให้อยู่ตรงกลางตามแนวนอน */
+  margin-top: 1rem;
+}
+
+.join-item {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+}
+
+.join-item.active {
+  background-color: #ffae00;
+  color: #fff;
+}
+
+.join-item.btn-disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.add-menu-btn {
+  background-color: #4CAF50; /* สีพื้นหลัง */
+  color: white; /* สีตัวอักษร */
+  padding: 10px 20px; /* ขนาดของปุ่ม */
+  font-size: 16px; /* ขนาดตัวอักษร */
+  border: none; /* ไม่มีเส้นขอบ */
+  border-radius: 5px; /* มนขอบปุ่ม */
+  cursor: pointer; /* ประเภทเมาส์เวลาชี้ */
+  transition: background-color 0.3s ease; /* การเปลี่ยนสีพื้นหลังเมื่อชี้ */
+}
+
+.add-menu-btn:hover {
+  background-color: #45a049; /* เปลี่ยนสีเมื่อชี้ */
+}
+
+.add-menu-btn:active {
+  background-color: #3e8e41; /* เปลี่ยนสีเมื่อคลิก */
+}
+
+.edit-btn {
+  z-index: 10; /* Ensure it's above the image */
+}
+
+/* Initially hide the edit button */
+.edit-btn.hidden {
+  visibility: hidden;
+}
+
+/* Show the edit button when hovering over the image */
+.group:hover .edit-btn {
+  visibility: visible;
+}
+
+
+
